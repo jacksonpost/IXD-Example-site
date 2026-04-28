@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tab name</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">The Best Products</h1>
+      <nav>
+        <!-- <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div> -->
+
+          <a href="index.html">Home</a>
+          <a href="products.html">products</a>
+          <a href="checkout.html">Checkout</a>
+
+      </nav>
+
+    </header>
+
+    <h2>Products</h2>
+    <p>A brief description of the products</p>
+
+    <div class="tile-container">
+      <div class="tile">
+        <a href="">
+          <img
+            src="https://www.svgrepo.com/show/347901/placeholder.svg"
+            alt="Description of the image"
+          />
+        </a>
+        <div>
+          <a href=""><h3>Product Name</h3></a>
+          <p>Brief description of the product</p>
+          <button>Add to cart</button>
+        </div>
+      </div>
+      <div class="tile">
+        <img
+          src="https://www.svgrepo.com/show/347901/placeholder.svg"
+          alt="Description of the image"
+        />
+        <div>
+          <a href=""><h3 id="responder">Product Name</h3></a>
+
+          <script>
+            const responder = document.getElementById("responder");
+
+            responder.addEventListener("click", () => {
+              alert("Hi!")
+            });
+          </script>
+
+          <p>Brief description of tile content</p>
+        </div>
+      </div>
+      <div class="tile">
+        <img
+          src="https://www.svgrepo.com/show/347901/placeholder.svg"
+          alt="Description of the image"
+        />
+        <div>
+          <a href="">
+            <h3>Product Name</h3>
+          </a>
+          <p>Brief description of tile content</p>
+        </div>
+      </div>
+      <div class="tile">
+        <img
+          src="https://www.svgrepo.com/show/347901/placeholder.svg"
+          alt="Description of the image"
+        />
+        <div>
+          <a href=""><h3>Product Name</h3></a>
+          <p>Brief description of the product</p>
+          <button>Add to cart</button>
+        </div>
+      </div>
+      <div class="tile">
+        <img
+          src="https://www.svgrepo.com/show/347901/placeholder.svg"
+          alt="Description of the image"
+        />
+        <div>
+          <a href=""><h3>Product Name</h3></a>
+          <p>Brief description of tile content</p>
+        </div>
+      </div>
+      <div class="tile">
+        <img
+          src="https://www.svgrepo.com/show/347901/placeholder.svg"
+          alt="Description of the image"
+        />
+        <div>
+          <a href="">
+            <h3>Product Name</h3>
+          </a>
+          <p>Brief description of tile content</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="overlay">
+      <p>Hello world</p>
+    </div>
+  </body>
+</html>

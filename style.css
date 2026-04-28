@@ -1,0 +1,116 @@
+/* Meyer reset */
+@import url(https://meyerweb.com/eric/tools/css/reset/reset.css);
+
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+header a{
+  color: white;
+}
+
+h1,
+h2,
+h3{
+  font-weight: bold;
+}
+
+h1{
+  font-size: 200%;
+}
+h2{
+  font-size: 150%;
+}
+
+/* This is a comment */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #8A38F5;
+  color: #ffffff;
+}
+
+.tile-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+.tile{
+  border: 1px solid black;
+  padding: 10px;
+/*  Tiles can shrink but not grow bigger thgan  */
+  max-width: 300px;
+  flex: 1 1 200px;  /* grow, shrink, base width */ 
+  max-height: 150px;
+  
+  /*  The tiles themselves are also flex-boxes!  */
+  display: flex;
+  align-items: space-between;
+}
+
+.tile a:focus{
+  color: red;
+  font-size: 300%;
+}
+
+.tile img{
+  height: 100%;
+}
+.tile img:hover{
+  background: yellow;
+}
+
+.tile,
+.tile img{
+  border-radius: 4px;
+}
+
+.hamburger{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 1;
+  align-items: space-between;
+  justify-content: space-between;
+  width: 20px;
+  height: 20px;
+}
+.hamburger span{
+  background: #ffffff;
+  height: 2px;
+}
+
+.overlay{
+  color: #ffffff;
+  font-size: 6rem;
+  display: none;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+/* 
+Utility classes
+
+These are small chunks of CSS that can be easily added to elements via a class name.  Use class names that reflect the function of the CSS e.g. .flex makes the element into a flexbox
+*/
+.flex{
+  display: flex;
+}
+.align-center{
+  align-items: center; 
+}
+.gap-med{
+  gap: 2rem;
+}
